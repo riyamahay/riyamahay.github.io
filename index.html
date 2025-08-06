@@ -9,12 +9,12 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <style>
                 /* Custom font for better aesthetics */
-                @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
                 body {
                         font-family: 'Inter', sans-serif;
-                        background-color: #f0f2f5;
-                        /* Light gray background */
+                        background-color: #e2e8f0;
+                        /* Lighter blue-gray background */
                 }
 
                 /* Custom scrollbar for a cleaner look */
@@ -23,43 +23,79 @@
                 }
 
                 ::-webkit-scrollbar-track {
-                        background: #f1f1f1;
+                        background: #cbd5e1;
+                        /* Lighter track */
                         border-radius: 10px;
                 }
 
                 ::-webkit-scrollbar-thumb {
-                        background: #888;
+                        background: #64748b;
+                        /* Darker thumb */
                         border-radius: 10px;
                 }
 
                 ::-webkit-scrollbar-thumb:hover {
-                        background: #555;
+                        background: #475569;
+                        /* Even darker on hover */
                 }
         </style>
 </head>
 
 <body class="antialiased text-gray-800">
         <div class="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
-                <div class="bg-white shadow-xl rounded-xl overflow-hidden max-w-4xl w-full p-6 sm:p-8 lg:p-10">
+                <div
+                        class="bg-white shadow-2xl rounded-2xl overflow-hidden max-w-6xl w-full p-6 sm:p-10 lg:p-12 transform transition-all duration-300 hover:scale-[1.005]">
 
                         <!-- Header Section -->
-                        <header class="text-center mb-8 sm:mb-10 lg:mb-12">
+                        <header
+                                class="text-center mb-10 sm:mb-12 lg:mb-16 bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-6 sm:p-8 rounded-xl shadow-lg">
                                 <h1
-                                        class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-2">
+                                        class="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight mb-3 tracking-tight">
                                         RIYA MAHAY</h1>
-                                <p class="text-md sm:text-lg text-gray-600">
-                                        <span class="inline-block mx-2">📞 9950315837</span> |
-                                        <span class="inline-block mx-2">📧 its_riya@outlook.com</span> |
-                                        <span class="inline-block mx-2">📍 Jaipur</span>
+                                <p class="text-lg sm:text-xl text-blue-100 font-light opacity-90">
+                                        <span class="inline-flex items-center mx-3"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-phone mr-1">
+                                                        <path
+                                                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-1.18 2.19l-.7.35a16 16 0 0 0 6 6l.35-.7a2 2 0 0 1 2.19-1.18 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                                </svg> 9950315837</span>
+                                        <span class="inline-flex items-center mx-3"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-mail mr-1">
+                                                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                                </svg> its_riya@outlook.com</span>
+                                        <span class="inline-flex items-center mx-3"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-map-pin mr-1">
+                                                        <path d="M12 12.72a1 1 0 1 0 0-1.44 1 1 0 0 0 0 1.44Z" />
+                                                        <path
+                                                                d="M19.07 4.93A10 10 0 0 0 12 2a10 10 0 0 0-7.07 2.93A10 10 0 0 0 2 12c0 2.29.62 4.46 1.77 6.37L12 22l8.23-3.63C21.38 16.46 22 14.29 22 12a10 10 0 0 0-2.93-7.07Z" />
+                                                </svg> Jaipur</span>
                                 </p>
                         </header>
 
                         <!-- Profile Section -->
-                        <section class="mb-8 sm:mb-10">
-                                <h2
-                                        class="text-2xl sm:text-3xl font-bold text-gray-900 border-b-4 border-blue-500 pb-2 mb-4">
-                                        PROFILE</h2>
-                                <p class="text-base sm:text-lg leading-relaxed text-gray-700">
+                        <section class="mb-10 sm:mb-12">
+                                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-user-circle mr-3 text-blue-600">
+                                                <circle cx="12" cy="12" r="10" />
+                                                <circle cx="12" cy="10" r="3" />
+                                                <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" />
+                                        </svg>
+                                        PROFILE
+                                </h2>
+                                <p
+                                        class="text-base sm:text-lg leading-relaxed text-gray-700 bg-blue-50 p-6 rounded-xl shadow-md border border-blue-100">
                                         Dynamic and results-driven professional with a unique blend of technical acumen
                                         (MCA) and a passion for beauty and artistry, now transitioning into a
                                         sales-focused role. Proven ability to engage with diverse clients, understand
@@ -70,148 +106,216 @@
                                 </p>
                         </section>
 
-                        <!-- Experience Section -->
-                        <section class="mb-8 sm:mb-10">
-                                <h2
-                                        class="text-2xl sm:text-3xl font-bold text-gray-900 border-b-4 border-blue-500 pb-2 mb-4">
-                                        EXPERIENCE</h2>
-
-                                <div class="mb-6">
-                                        <h3 class="text-xl sm:text-2xl font-semibold text-gray-800">ACADEMIC COUNSELLOR
-                                                | VLCC, Jaipur</h3>
-                                        <p class="text-gray-600 italic mb-3">Start Date - September 3, 2025 (Resignation
-                                                Period Ends)</p>
-                                        <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
-                                                <li>Successfully counselled prospective students on various beauty and
-                                                        wellness programs, leading to increased enrollments.</li>
-                                                <li>Managed the end-to-end admission process, from initial inquiry to
-                                                        final registration, ensuring a smooth and positive experience
-                                                        for students.</li>
-                                                <li>Achieved and consistently exceeded monthly and quarterly admission
-                                                        targets through effective communication and persuasive
-                                                        techniques.</li>
-                                                <li>Developed strong rapport with students and parents, addressing their
-                                                        concerns and providing comprehensive information about course
-                                                        benefits and career opportunities.</li>
-                                                <li>Collaborated with the marketing team to organize promotional events
-                                                        and workshops, directly contributing to lead generation.</li>
-                                        </ul>
-                                </div>
-
+                        <!-- Main Content Area: Two columns on medium and large screens -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+                                <!-- Left Column for Experience and Education -->
                                 <div>
-                                        <h3 class="text-xl sm:text-2xl font-semibold text-gray-800">FREELANCER ARTIST |
-                                                Various Events & Clients</h3>
-                                        <p class="text-gray-600 italic mb-3">2022-2023</p>
-                                        <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
-                                                <li>Cultivated a diverse client base by understanding individual
-                                                        preferences and delivering tailored makeup, hair, skin, and nail
-                                                        artistry services for events, fashion shoots, and weddings.</li>
-                                                <li>Managed client consultations, project timelines, and service
-                                                        delivery, ensuring high levels of client satisfaction and repeat
-                                                        business.</li>
-                                                <li>Proactively recommended and sold additional beauty services and
-                                                        products based on client needs, enhancing overall service value.
-                                                </li>
-                                                <li>Demonstrated expertise in product knowledge and application
-                                                        techniques, effectively communicating benefits to clients.</li>
-                                        </ul>
+                                        <!-- Experience Section -->
+                                        <section class="mb-8 sm:mb-10">
+                                                <h2
+                                                        class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 flex items-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                                stroke-width="2" stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                class="lucide lucide-briefcase mr-3 text-blue-600">
+                                                                <rect width="20" height="14" x="2" y="7" rx="2"
+                                                                        ry="2" />
+                                                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                                                                <path d="M12 12h.01" />
+                                                        </svg>
+                                                        EXPERIENCE
+                                                </h2>
+
+                                                <div
+                                                        class="mb-8 bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                                                        <h3
+                                                                class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">
+                                                                ACADEMIC COUNSELLOR | VLCC, Jaipur</h3>
+                                                        <p class="text-gray-600 italic mb-4 text-sm sm:text-base">March 2044 to Present</p>
+                                                        <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+                                                                <li>Successfully counselled prospective students on
+                                                                        various beauty and wellness programs, leading to
+                                                                        increased enrollments.</li>
+                                                                <li>Managed the end-to-end admission process, from
+                                                                        initial inquiry to final registration, ensuring
+                                                                        a smooth and positive experience for students.
+                                                                </li>
+                                                                <li>Achieved and consistently exceeded monthly and
+                                                                        quarterly admission targets through effective
+                                                                        communication and persuasive techniques.</li>
+                                                                <li>Developed strong rapport with students and parents,
+                                                                        addressing their concerns and providing
+                                                                        comprehensive information about course benefits
+                                                                        and career opportunities.</li>
+                                                                <li>Collaborated with the marketing team to organize
+                                                                        promotional events and workshops, directly
+                                                                        contributing to lead generation.</li>
+                                                        </ul>
+                                                </div>
+
+                                                <div
+                                                        class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                                                        <h3
+                                                                class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">
+                                                                FREELANCER ARTIST | Various Events & Clients</h3>
+                                                        <p class="text-gray-600 italic mb-4 text-sm sm:text-base">
+                                                                2022-2023</p>
+                                                        <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+                                                                <li>Cultivated a diverse client base by understanding
+                                                                        individual preferences and delivering tailored
+                                                                        makeup, hair, skin, and nail artistry services
+                                                                        for events, fashion shoots, and weddings.</li>
+                                                                <li>Managed client consultations, project timelines, and
+                                                                        service delivery, ensuring high levels of client
+                                                                        satisfaction and repeat business.</li>
+                                                                <li>Proactively recommended and sold additional beauty
+                                                                        services and products based on client needs,
+                                                                        enhancing overall service value.</li>
+                                                                <li>Demonstrated expertise in product knowledge and
+                                                                        application techniques, effectively
+                                                                        communicating benefits to clients.</li>
+                                                        </ul>
+                                                </div>
+                                        </section>
+
+                                        <!-- Education Section -->
+                                        <section class="mb-8 sm:mb-10">
+                                                <h2
+                                                        class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 flex items-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                                stroke-width="2" stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                class="lucide lucide-graduation-cap mr-3 text-blue-600">
+                                                                <path
+                                                                        d="M21.43 12.97c.4-.73.16-1.65-.49-2.12L16.29 7.3a1.94 1.94 0 0 0-2.27-.03L10.9 9.35a1.94 1.94 0 0 1-2.27-.03L3.06 6.85c-.65-.47-.9-1.39-.49-2.12A1.94 1.94 0 0 1 5 4h14c.76 0 1.45.34 1.94.93" />
+                                                                <path d="M4 22v-6c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v6" />
+                                                                <path d="m11 10 3-3 3 3" />
+                                                                <path d="M12 14v8" />
+                                                        </svg>
+                                                        EDUCATION
+                                                </h2>
+
+                                                <div
+                                                        class="mb-8 bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                                                        <h3
+                                                                class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">
+                                                                MASTER OF COMPUTER APPLICATION (MCA) | JNU, Jaipur</h3>
+                                                        <p class="text-gray-600 italic text-sm sm:text-base">2017-2019
+                                                        </p>
+                                                </div>
+
+                                                <div
+                                                        class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                                                        <h3
+                                                                class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">
+                                                                VLCC COURSES | VLCC, Jaipur</h3>
+                                                        <p class="text-gray-600 italic mb-4 text-sm sm:text-base">
+                                                                2022-2023</p>
+                                                        <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+                                                                <li>Complete Makeup Artist Program</li>
+                                                                <li>Comprehensive Makeup Artist Program</li>
+                                                                <li>State of the Art Makeup Artist Program</li>
+                                                                <li>Beginner in Hair Dressing Program</li>
+                                                                <li>Comprehensive Hair Dressing Program</li>
+                                                                <li>Certificate in Signature Hair Styling</li>
+                                                                <li>Beginners in Beauty Artistry</li>
+                                                                <li>Advance Certificate in Beauty Artistry</li>
+                                                                <li>Comprehensive Program in Derma Peel</li>
+                                                                <li>Comprehensive Program in Nail Artistry</li>
+                                                        </ul>
+                                                </div>
+                                        </section>
                                 </div>
-                        </section>
 
-                        <!-- Education Section -->
-                        <section class="mb-8 sm:mb-10">
-                                <h2
-                                        class="text-2xl sm:text-3xl font-bold text-gray-900 border-b-4 border-blue-500 pb-2 mb-4">
-                                        EDUCATION</h2>
-
-                                <div class="mb-6">
-                                        <h3 class="text-xl sm:text-2xl font-semibold text-gray-800">MASTER OF COMPUTER
-                                                APPLICATION (MCA) | JNU, Jaipur</h3>
-                                        <p class="text-gray-600 italic">2017-2019</p>
-                                </div>
-
+                                <!-- Right Column for Skills -->
                                 <div>
-                                        <h3 class="text-xl sm:text-2xl font-semibold text-gray-800">VLCC COURSES | VLCC,
-                                                Jaipur</h3>
-                                        <p class="text-gray-600 italic mb-3">2022-2023</p>
-                                        <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
-                                                <li>Complete Makeup Artist Program</li>
-                                                <li>Comprehensive Makeup Artist Program</li>
-                                                <li>State of the Art Makeup Artist Program</li>
-                                                <li>Beginner in Hair Dressing Program</li>
-                                                <li>Comprehensive Hair Dressing Program</li>
-                                                <li>Certificate in Signature Hair Styling</li>
-                                                <li>Beginners in Beauty Artistry</li>
-                                                <li>Advance Certificate in Beauty Artistry</li>
-                                                <li>Comprehensive Program in Derma Peel</li>
-                                                <li>Comprehensive Program in Nail Artistry</li>
-                                        </ul>
+                                        <!-- Skills Section -->
+                                        <section>
+                                                <h2
+                                                        class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 flex items-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                                stroke-width="2" stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                class="lucide lucide-zap mr-3 text-blue-600">
+                                                                <path
+                                                                        d="M4 14a1 1 0 0 1-.37-.7c-.3-1-.26-2.2.4-3.26A9 9 0 0 1 12 2a9 9 0 0 1 7.96 8.04c.66 1.06.7 2.26.4 3.26a1 1 0 0 1-.37.7L12 22l-8-8Z" />
+                                                                <path d="M12 2v10l-4 4" />
+                                                        </svg>
+                                                        SKILLS
+                                                </h2>
+                                                <div class="grid grid-cols-1 gap-4 text-gray-700">
+                                                        <div
+                                                                class="bg-white p-5 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                                                                <h3
+                                                                        class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">
+                                                                        Sales & Business Development:</h3>
+                                                                <ul class="list-disc list-inside pl-4 text-sm">
+                                                                        <li>Client Acquisition</li>
+                                                                        <li>Consultative Selling</li>
+                                                                        <li>Product Promotion</li>
+                                                                        <li>Target Achievement</li>
+                                                                        <li>Upselling</li>
+                                                                        <li>Cross-selling</li>
+                                                                </ul>
+                                                        </div>
+                                                        <div
+                                                                class="bg-white p-5 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                                                                <h3
+                                                                        class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">
+                                                                        Client Relationship Management:</h3>
+                                                                <ul class="list-disc list-inside pl-4 text-sm">
+                                                                        <li>Customer Service</li>
+                                                                        <li>Needs Assessment</li>
+                                                                        <li>Conflict Resolution</li>
+                                                                        <li>Building Rapport</li>
+                                                                        <li>Retention</li>
+                                                                </ul>
+                                                        </div>
+                                                        <div
+                                                                class="bg-white p-5 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                                                                <h3
+                                                                        class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">
+                                                                        Communication & Presentation:</h3>
+                                                                <ul class="list-disc list-inside pl-4 text-sm">
+                                                                        <li>Verbal & Written Communication</li>
+                                                                        <li>Active Listening</li>
+                                                                        <li>Public Speaking</li>
+                                                                        <li>Persuasion</li>
+                                                                        <li>Negotiation</li>
+                                                                </ul>
+                                                        </div>
+                                                        <div
+                                                                class="bg-white p-5 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                                                                <h3
+                                                                        class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">
+                                                                        Operational & Technical:</h3>
+                                                                <ul class="list-disc list-inside pl-4 text-sm">
+                                                                        <li>Time Management</li>
+                                                                        <li>Teamwork</li>
+                                                                        <li>Product Knowledge</li>
+                                                                        <li>Problem-Solving</li>
+                                                                        <li>Data Management (from MCA background)</li>
+                                                                </ul>
+                                                        </div>
+                                                        <div
+                                                                class="bg-white p-5 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                                                                <h3
+                                                                        class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">
+                                                                        Beauty & Wellness Expertise:</h3>
+                                                                <ul class="list-disc list-inside pl-4 text-sm">
+                                                                        <li>Makeup Application</li>
+                                                                        <li>Hair Dressing</li>
+                                                                        <li>Skin Therapy</li>
+                                                                        <li>Nail Artistry</li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                        </section>
                                 </div>
-                        </section>
-
-                        <!-- Skills Section -->
-                        <section>
-                                <h2
-                                        class="text-2xl sm:text-3xl font-bold text-gray-900 border-b-4 border-blue-500 pb-2 mb-4">
-                                        SKILLS</h2>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
-                                        <div>
-                                                <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-1">Sales &
-                                                        Business Development:</h3>
-                                                <ul class="list-disc list-inside pl-4">
-                                                        <li>Client Acquisition</li>
-                                                        <li>Consultative Selling</li>
-                                                        <li>Product Promotion</li>
-                                                        <li>Target Achievement</li>
-                                                        <li>Upselling</li>
-                                                        <li>Cross-selling</li>
-                                                </ul>
-                                        </div>
-                                        <div>
-                                                <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-1">Client
-                                                        Relationship Management:</h3>
-                                                <ul class="list-disc list-inside pl-4">
-                                                        <li>Customer Service</li>
-                                                        <li>Needs Assessment</li>
-                                                        <li>Conflict Resolution</li>
-                                                        <li>Building Rapport</li>
-                                                        <li>Retention</li>
-                                                </ul>
-                                        </div>
-                                        <div>
-                                                <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-1">
-                                                        Communication & Presentation:</h3>
-                                                <ul class="list-disc list-inside pl-4">
-                                                        <li>Verbal & Written Communication</li>
-                                                        <li>Active Listening</li>
-                                                        <li>Public Speaking</li>
-                                                        <li>Persuasion</li>
-                                                        <li>Negotiation</li>
-                                                </ul>
-                                        </div>
-                                        <div>
-                                                <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-1">
-                                                        Operational & Technical:</h3>
-                                                <ul class="list-disc list-inside pl-4">
-                                                        <li>Time Management</li>
-                                                        <li>Teamwork</li>
-                                                        <li>Product Knowledge</li>
-                                                        <li>Problem-Solving</li>
-                                                        <li>Data Management (from MCA background)</li>
-                                                </ul>
-                                        </div>
-                                        <div>
-                                                <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-1">Beauty &
-                                                        Wellness Expertise:</h3>
-                                                <ul class="list-disc list-inside pl-4">
-                                                        <li>Makeup Application</li>
-                                                        <li>Hair Dressing</li>
-                                                        <li>Skin Therapy</li>
-                                                        <li>Nail Artistry</li>
-                                                </ul>
-                                        </div>
-                                </div>
-                        </section>
+                        </div>
 
                 </div>
         </div>
