@@ -56,9 +56,16 @@
 </head>
 
 <body class="antialiased text-gray-800">
-        <div class="absolute top-4 right-4 print:hidden">
-                <button onclick="window.print()" class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded inline-flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-printer mr-2"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"/><path d="M18 14H6v8h12v-8z"/></svg>
+        <div class="flex print:hidden center w-100 justify-center pt-4">
+                <button onclick="window.print()"
+                        class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-printer mr-2">
+                                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                                <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" />
+                                <path d="M18 14H6v8h12v-8z" />
+                        </svg>
                         <span>Print to PDF</span>
                 </button>
         </div>
