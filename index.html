@@ -52,11 +52,47 @@
                         margin: 0 !important;
                 }
         }
+
+        /* Toggle styles */
+        .beauty-content {
+                transition: opacity 0.3s ease, max-height 0.3s ease;
+                overflow: hidden;
+        }
+        
+        .beauty-content.hidden {
+                opacity: 0;
+                max-height: 0;
+                margin: 0;
+                padding: 0;
+        }
         </style>
+        <script>
+        function toggleBeautyContent() {
+                const beautySkills = document.getElementById('beautySkills');
+                const vlccCourses = document.getElementById('vlccCourses');
+                const toggleButton = document.getElementById('toggleButton');
+                const toggleText = document.getElementById('toggleText');
+                const toggleIcon = document.getElementById('toggleIcon');
+                
+                if (beautySkills.classList.contains('hidden')) {
+                        // Show content
+                        beautySkills.classList.remove('hidden');
+                        vlccCourses.classList.remove('hidden');
+                        toggleText.textContent = 'Hide Beauty Content';
+                        toggleIcon.innerHTML = '<path d="m15.5 4.14 2.36 2.36a10 10 0 0 1 0 11"/><path d="m9.5 19.86-2.36-2.36a10 10 0 0 1 0-11"/><path d="M2 12h20"/><path d="M12 2v20"/>';
+                } else {
+                        // Hide content
+                        beautySkills.classList.add('hidden');
+                        vlccCourses.classList.add('hidden');
+                        toggleText.textContent = 'Show Beauty Content';
+                        toggleIcon.innerHTML = '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>';
+                }
+        }
+        </script>
 </head>
 
 <body class="antialiased text-gray-800">
-        <div class="flex print:hidden center w-100 justify-center pt-4">
+        <div class="flex print:hidden center w-100 justify-center pt-4 gap-4">
                 <button onclick="window.print()"
                         class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded inline-flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -67,6 +103,18 @@
                                 <path d="M18 14H6v8h12v-8z" />
                         </svg>
                         <span>Print to PDF</span>
+                </button>
+                <button onclick="toggleBeautyContent()" id="toggleButton"
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-eye-off mr-2" id="toggleIcon">
+                                <path d="m15.5 4.14 2.36 2.36a10 10 0 0 1 0 11"/>
+                                <path d="m9.5 19.86-2.36-2.36a10 10 0 0 1 0-11"/>
+                                <path d="M2 12h20"/>
+                                <path d="M12 2v20"/>
+                        </svg>
+                        <span id="toggleText">Hide Beauty Content</span>
                 </button>
         </div>
         <div class="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8 print-body">
@@ -235,8 +283,8 @@
                                                         </p>
                                                 </div>
 
-                                                <div
-                                                        class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                                                <div id="vlccCourses"
+                                                        class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 beauty-content">
                                                         <h3
                                                                 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">
                                                                 VLCC COURSES | VLCC, Jaipur</h3>
@@ -277,8 +325,8 @@
                                                 </h2>
                                                 <div class="grid grid-cols-1 gap-4 text-gray-700">
                                                         <!-- Moved Beauty & Wellness Expertise to the top -->
-                                                        <div
-                                                                class="bg-white p-5 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                                                        <div id="beautySkills"
+                                                                class="bg-white p-5 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 beauty-content">
                                                                 <h3
                                                                         class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">
                                                                         Beauty & Wellness Expertise:</h3>
